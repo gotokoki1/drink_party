@@ -5,4 +5,9 @@
       <p class="overview-content">好きなお酒や趣味の合う仲間を探そう</p>
     </div>
   </div>
+  <div class="inner">
+    <% @posts.each do |post| %>
+      <%= render partial: "post", locals: { post: post } %>
+    <% end %>
+  </div>
 </main>
